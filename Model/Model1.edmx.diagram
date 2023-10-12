@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6034d255221043fc9a8f24d195a57d6a" Name="Diagram1">
+        <EntityTypeShape EntityType="PetshopModel.Breeder" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="PetshopModel.Cart" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PetshopModel.Customer" Width="1.5" PointX="0.75" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PetshopModel.Pet" Width="1.5" PointX="3" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PetshopModel.TransactionDetail" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PetshopModel.TransactionHeader" Width="1.5" PointX="3" PointY="7.875" IsExpanded="true" />
+        <AssociationConnector Association="PetshopModel.FK_Pet_Breeder" ManuallyRouted="false" />
+        <AssociationConnector Association="PetshopModel.FK_Cart_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="PetshopModel.FK_Cart_Pet" ManuallyRouted="false" />
+        <AssociationConnector Association="PetshopModel.FK_TransactionHeader_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="PetshopModel.FK_TransactionDetail_Pet" ManuallyRouted="false" />
+        <AssociationConnector Association="PetshopModel.FK_TransactionDetail_TransactionHeader" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
